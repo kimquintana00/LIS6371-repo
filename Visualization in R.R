@@ -5,11 +5,7 @@ barplot(Rights)
 barplot(Rights,main="Network Rights", xlab="Location",
         ylab = "Rights",names.arg = "ROM TOK MEX MUN MON LA SEO BAR ATL")
 
-gdURL <-"https://vincentarelbundock.github.io/Rdatasets/csv/AER/OlympicTV.csv"
-gDat <-read.delim(file=gdURL)
-str(gDat)
-library(lattice)
-xyplot("Rights","Network",jdat,grid=TRUE)
+
 
 pie(Rights)
 pie(Rights, main = "Network Rights", col = rainbow(length(Rights)), labels = c("ROM
@@ -22,3 +18,11 @@ LA
 SEO 
 BAR 
 ATL"))
+
+plot(Rights)
+plot(Rights, type="o",col="blue")
+title(main="Network Rights", col.main="red",font.main=4)
+plot(Rights, type="o", col="blue", ylim= g_range, 
+     axes=FALSE, ann=FALSE)
+axis(1, at = 1:10, labels = c("ROM", "TOK", "M.C.", "MUN", "MONT", "MOS", "LA", "SEO", "BAR", "ATL"))
+
