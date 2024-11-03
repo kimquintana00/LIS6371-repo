@@ -1,0 +1,11 @@
+Package: MyPackage
+Type: Package
+Title: 2024 Presidential Election National Polls Visualization
+Version: 0.1.0
+Author: "Kimberly Quintana <kimberlyquintana@usf.edu> [aut,cre]""
+Maintainer: The package maintainer <kimberlyquintana@usf.edu>
+Description: Visual representation of the 2024 Presidential Election National Polls
+    using pie chart and bar chart.
+License: CCO
+Encoding: UTF-8
+LazyData: true
