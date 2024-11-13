@@ -1,0 +1,21 @@
+---
+title: "2024 Presidential Election National Polls"
+author: "Kimberly"
+date: "2024-11-11"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+PoliticalParties <- c("Democrat", "Republican") 
+Polls <- c(48.4, 47.2) 
+
+pie(Polls, main = "2024 Presidential Election National Polls Visualization", col = rainbow(length(Polls)), labels = c("Republican", "Democrat"))
+
+
+barplot(Polls,main="2024 Presidential Election National Polls Visualization", xlab="Political Parties", ylab = "Polls",names.arg = "DEM REP")
+```
+
+  
+These functions allow the user to see the national poll percentages for both political parties. One can see in both, the pie chart and bar plot that the democratic party had slightly more votes in the national polls.
